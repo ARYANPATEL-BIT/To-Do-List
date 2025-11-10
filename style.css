@@ -25,7 +25,6 @@
     border: none;
     border-radius: 10px;
     font-size: 35px;
-
 }
 
 .impTask{
@@ -50,6 +49,16 @@
     cursor: pointer;
     margin: 10px;
     z-index: 10;
+}
+
+.imp:hover{
+    transition: 0.2s;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.imp:active{
+    background-color: #ffffff;
 }
 
 .val{
@@ -95,11 +104,21 @@
     margin: 20px;
 }
 
-#add{
+.add{
     border: none;
     width: 12%;
     height:62px ;
     font-size: 22px;
     border-radius: 15px;
     background-color: #6b9080;
+}
+
+.add:hover{
+    transition: 0.2s;
+    transform: scale(1.05);
+    background-color: #4b7663;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.add:active{
+    background-color: #58947a;
 }

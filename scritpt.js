@@ -14,6 +14,7 @@ function append(){
 
     const task = document.getElementById("task");
     task.appendChild(newTask);
+
     newTask.appendChild(done)
 
     done.onclick = () => newTask.remove();
@@ -28,19 +29,20 @@ function Priority(){
     impTask.id = "impTask";
     impTask.className = "impTask"
 
-    const done = document.createElement("button");
-    done.id = "done";
-    done.className = "done"
-    done.textContent = "✔️"
+    const impDone = document.createElement("button");
+    impDone.id = "impDone";
+    impDone.className = "impDone"
+    impDone.textContent = "✔️"
 
     let value = document.getElementById("val").value;
     impTask.textContent = value;
 
     const task = document.getElementById("task");
-    task.appendChild(impTask);
-    impTask.appendChild(done)
+    task.prepend(impTask);
 
-    done.onclick = () => impTask.remove();
+    impTask.appendChild(impDone)
+
+    impDone.onclick = () => impTask.remove();
 
     document.getElementById("val").value = "";
     

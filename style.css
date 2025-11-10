@@ -1,0 +1,31 @@
+.input{
+    /* display: flex; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    size: 25%;
+    border: 2px solid;
+    height: 750px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.value{
+    top: 25%;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(184, 196, 174);
+    width: 85%;
+    height:60px;   
+    /* padding: 10px; */
+    font-size: 30px;
+}
+
+.add{
+    border: none;
+    width: 12%;
+    height:60px ;
+    font-size: 22px;
+    border-radius: 15px;
+    background-color: rgb(207, 229, 190);
+}

@@ -1,3 +1,13 @@
+.container{
+    border: none;
+    background-color: #f6fff8;
+    min-height: 45vh;
+    height: auto;
+    margin: 20px;
+    border-radius: 15px;
+    overflow: auto;
+}
+
 .input{
     /* display: flex; */
     flex-direction: row;
@@ -5,27 +15,91 @@
     justify-content: flex-start;
     size: 25%;
     border: 2px solid;
-    height: 750px;
     padding: 20px;
     margin: 20px;
+    border: none;
 }
 
-.value{
+.imp{
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    font-size: 35px;
+
+}
+
+.impTask{
+    background-color: #d77676;
+    font-size:30px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    display: flex;
+    min-height: 40px;
+    height: auto;
+    box-sizing: border-box;
+    margin: 10px;
+    white-space: normal;
+    justify-content: space-between;
+}
+
+.impTask button {
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    z-index: 10;
+}
+
+.val{
     top: 25%;
     border: none;
     border-radius: 15px;
-    background-color: rgb(184, 196, 174);
+    background-color: #cce3de;
     width: 85%;
     height:60px;   
     /* padding: 10px; */
     font-size: 30px;
+    padding-left: 7px;
+    overflow: auto;
 }
 
-.add{
+.newTasks{
+    font-size:30px;
+    background-color: #a4c3b2;
+    border: none;
+    border-radius:10px;
+    padding-left: 10px;
+    min-height: 40px;
+    height: auto;
+    margin: 10px;
+    white-space: normal;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newTasks button{
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    z-index: 10;
+}
+
+
+.task{
+    padding: 20px;
+    margin: 20px;
+}
+
+#add{
     border: none;
     width: 12%;
-    height:60px ;
+    height:62px ;
     font-size: 22px;
     border-radius: 15px;
-    background-color: rgb(207, 229, 190);
+    background-color: #6b9080;
 }
